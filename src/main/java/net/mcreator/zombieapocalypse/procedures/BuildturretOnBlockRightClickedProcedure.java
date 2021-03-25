@@ -1,9 +1,13 @@
 package net.mcreator.zombieapocalypse.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
@@ -49,6 +53,15 @@ public class BuildturretOnBlockRightClickedProcedure extends ZombieApocalypseMod
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+		if (world instanceof World && !world.isRemote()) {
+			((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
+					SoundCategory.NEUTRAL, (float) 1, (float) 1);
+		} else {
+			((World) world).playSound(x, y, z,
+					(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.anvil.use")),
+					SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+		}
 		if (world instanceof ServerWorld) {
 			Entity entityToSpawn = new TurretnormalEntity.CustomEntity(TurretnormalEntity.entity, (World) world);
 			entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);

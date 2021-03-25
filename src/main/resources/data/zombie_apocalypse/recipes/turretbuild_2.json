@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "zombie_apocalypse:turretstand"
+  },
+  "addition": {
+    "item": "zombie_apocalypse:turrethead"
+  },
+  "result": {
+    "item": "zombie_apocalypse:buildturret"
+  }
+}

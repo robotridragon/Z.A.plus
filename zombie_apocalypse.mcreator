@@ -1536,6 +1536,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "buildturret"
+    },
+    {
+      "name": "Turretconsturct",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turretconsturct"
+    },
+    {
+      "name": "Turretbuild2",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turretbuild_2"
     }
   ],
   "variable_elements": [

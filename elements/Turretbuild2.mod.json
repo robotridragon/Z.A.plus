@@ -1,0 +1,23 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "CUSTOM:Turretstand"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:Turrethead"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:Buildturret"
+    },
+    "name": "turretbuild_2",
+    "namespace": "mod"
+  }
+}
