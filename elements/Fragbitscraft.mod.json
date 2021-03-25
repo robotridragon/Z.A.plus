@@ -1,0 +1,46 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Fragmentiteitem"
+    },
+    "name": "fragbitscraft",
+    "namespace": "mod"
+  }
+}

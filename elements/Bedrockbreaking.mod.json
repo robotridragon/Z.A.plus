@@ -1,0 +1,34 @@
+{
+  "_fv": 17,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Bedrock breaking",
+    "type": "DIGGER",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "EFFICIENCY"
+      },
+      {
+        "value": "SILK_TOUCH"
+      },
+      {
+        "value": "UNBREAKING"
+      },
+      {
+        "value": "FORTUNE"
+      }
+    ],
+    "compatibleItems": [
+      {
+        "value": "CUSTOM:Greatdrill"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

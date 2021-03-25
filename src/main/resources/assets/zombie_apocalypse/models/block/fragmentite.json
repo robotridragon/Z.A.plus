@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/fragmentite",
+    "up": "zombie_apocalypse:blocks/fragmentite",
+    "north": "zombie_apocalypse:blocks/fragmentite",
+    "east": "zombie_apocalypse:blocks/fragmentite",
+    "south": "zombie_apocalypse:blocks/fragmentite",
+    "west": "zombie_apocalypse:blocks/fragmentite",
+    "particle": "zombie_apocalypse:blocks/fragmentite"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "group": "weapons",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 45"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cobblestone"
+    },
+    "1": {
+      "item": "minecraft:cobblestone"
+    },
+    "2": {
+      "item": "minecraft:cobblestone"
+    },
+    "4": {
+      "item": "zombie_apocalypse:halfstick"
+    },
+    "5": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:pistol",
+    "count": 1
+  }
+}

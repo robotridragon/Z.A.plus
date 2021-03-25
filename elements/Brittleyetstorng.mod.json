@@ -1,0 +1,31 @@
+{
+  "_fv": 17,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Brittle yet strong????",
+    "achievementDescription": "i get you do not understand!",
+    "achievementIcon": {
+      "value": "CUSTOM:Fragmentiteitem"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Fragmentite_tierPickaxeRecipe",
+      "Fragmentite_tierAxeRecipe",
+      "Fragmentite_tierSwordRecipe",
+      "Fragmentite_tierShovelRecipe",
+      "Fragmentite_tierHoeRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 2,
+    "achievementType": "task",
+    "parent": {
+      "value": "story/mine_stone"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"47\" y=\"18\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">15</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Fragmentitehunk</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

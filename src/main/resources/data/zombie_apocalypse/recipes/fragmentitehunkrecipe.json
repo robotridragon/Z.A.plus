@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "zombie_apocalypse:fragmentiteitem"
+  },
+  "addition": {
+    "item": "zombie_apocalypse:fragmentiteitem"
+  },
+  "result": {
+    "item": "zombie_apocalypse:fragmentitehunk"
+  }
+}

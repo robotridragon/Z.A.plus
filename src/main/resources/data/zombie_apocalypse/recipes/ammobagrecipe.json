@@ -1,0 +1,16 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zombie_apocalypse:mm_9"
+    },
+    {
+      "item": "minecraft:green_carpet"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:ammobag",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "zombie_apocalypse:purevolatileite"
+    },
+    "title": {
+      "translate": "advancements.yikes.title"
+    },
+    "description": {
+      "translate": "advancements.yikes.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "yikes": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 7
+  },
+  "parent": "zombie_apocalypse:brittleyetstorng"
+}

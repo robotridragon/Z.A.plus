@@ -1,0 +1,21 @@
+{
+  "_fv": 17,
+  "_type": "particle",
+  "definition": {
+    "texture": "fragparticle.png",
+    "animate": true,
+    "frameDuration": 7,
+    "width": 0.1,
+    "height": 0.1,
+    "scale": 1.0,
+    "speedFactor": 0.1,
+    "gravity": 1.0,
+    "maxAge": 42,
+    "maxAgeDiff": 2,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zombie_apocalypse:volatileite_block"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:volatileite",
+    "count": 9
+  }
+}

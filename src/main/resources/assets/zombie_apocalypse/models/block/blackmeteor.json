@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/blackmeteor",
+    "up": "zombie_apocalypse:blocks/blackmeteor",
+    "north": "zombie_apocalypse:blocks/blackmeteor",
+    "east": "zombie_apocalypse:blocks/blackmeteor",
+    "south": "zombie_apocalypse:blocks/blackmeteor",
+    "west": "zombie_apocalypse:blocks/blackmeteor",
+    "particle": "zombie_apocalypse:blocks/blackmeteor"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zombie_apocalypse:fragmentitehunk"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:fragmentiteitem",
+    "count": 2
+  }
+}

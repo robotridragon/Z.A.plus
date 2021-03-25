@@ -1,0 +1,26 @@
+{
+  "group": "weapons",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "zombie_apocalypse:halfstick"
+    },
+    "2": {
+      "item": "zombie_apocalypse:pole"
+    },
+    "3": {
+      "item": "zombie_apocalypse:stoneknife"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:wooden_spear",
+    "count": 1
+  }
+}

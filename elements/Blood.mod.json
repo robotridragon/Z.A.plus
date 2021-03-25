@@ -1,0 +1,21 @@
+{
+  "_fv": 17,
+  "_type": "particle",
+  "definition": {
+    "texture": "blood2nointerpolate.png",
+    "animate": true,
+    "frameDuration": 1,
+    "width": 0.5,
+    "height": 0.5,
+    "scale": 2.0,
+    "speedFactor": 0.0,
+    "gravity": 1.1,
+    "maxAge": 6,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.0,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "OPAQUE"
+  }
+}

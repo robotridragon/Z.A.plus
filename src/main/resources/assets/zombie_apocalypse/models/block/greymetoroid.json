@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/greymetioroid",
+    "up": "zombie_apocalypse:blocks/greymetioroid",
+    "north": "zombie_apocalypse:blocks/greymetioroid",
+    "east": "zombie_apocalypse:blocks/greymetioroid",
+    "south": "zombie_apocalypse:blocks/greymetioroid",
+    "west": "zombie_apocalypse:blocks/greymetioroid",
+    "particle": "zombie_apocalypse:blocks/greymetioroid"
+  }
+}

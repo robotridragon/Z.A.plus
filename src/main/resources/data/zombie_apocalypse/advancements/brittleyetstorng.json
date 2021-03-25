@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "zombie_apocalypse:fragmentiteitem"
+    },
+    "title": {
+      "translate": "advancements.brittleyetstorng.title"
+    },
+    "description": {
+      "translate": "advancements.brittleyetstorng.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "brittleyetstorng": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "zombie_apocalypse:fragmentitehunk",
+            "count": {
+              "min": 1,
+              "max": 15
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 2,
+    "recipes": [
+      "zombie_apocalypse:fragmentite_tier_pickaxe_recipe",
+      "zombie_apocalypse:fragmentite_tier_axe_recipe",
+      "zombie_apocalypse:fragmentite_tier_sword_recipe",
+      "zombie_apocalypse:fragmentite_tier_shovel_recipe",
+      "zombie_apocalypse:fragmentite_tier_hoe_recipe"
+    ]
+  },
+  "parent": "minecraft:story/mine_stone"
+}

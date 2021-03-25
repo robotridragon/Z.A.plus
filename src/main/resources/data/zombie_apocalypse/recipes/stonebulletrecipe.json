@@ -1,0 +1,16 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:cobblestone"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:stonebullet",
+    "count": 16
+  }
+}

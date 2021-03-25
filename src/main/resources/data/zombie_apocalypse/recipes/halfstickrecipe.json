@@ -1,0 +1,13 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:halfstick",
+    "count": 2
+  }
+}

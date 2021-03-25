@@ -1,0 +1,1 @@
+execute at @a run particle fragmentiteparticle ~ ~1 ~ 1 1 1 1.11 4 normal @a

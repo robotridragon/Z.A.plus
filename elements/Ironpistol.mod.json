@@ -1,0 +1,46 @@
+{
+  "_fv": 17,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "9mmpistol",
+    "customModelName": "stonepistol:ironpistol",
+    "name": "9mm Pistol",
+    "specialInfo": [
+      "POP! POP!",
+      "thanks to ender2point0 for gun sound!"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "CUSTOM:mm9shoots"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "PistolRangedItemUsed"
+    },
+    "useCondition": {
+      "name": "IronpistolCanUseRangedItem"
+    },
+    "bulletPower": 5.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.GOLD_NUGGET"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

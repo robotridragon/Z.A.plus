@@ -1,0 +1,46 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Volatileite"
+      },
+      {
+        "value": "CUSTOM:Volatileite"
+      },
+      {
+        "value": "CUSTOM:Volatileite"
+      },
+      {
+        "value": "CUSTOM:Volatileite"
+      },
+      {
+        "value": "CUSTOM:Fragmentitedust"
+      },
+      {
+        "value": "CUSTOM:Purevolatileite"
+      },
+      {
+        "value": "CUSTOM:Purevolatileite"
+      },
+      {
+        "value": "CUSTOM:Purevolatileite"
+      },
+      {
+        "value": "CUSTOM:Purevolatileite"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:VolatileiteBlock"
+    },
+    "name": "volatileite_ore_block_recipe",
+    "namespace": "mod"
+  }
+}

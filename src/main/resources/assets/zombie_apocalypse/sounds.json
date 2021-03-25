@@ -1,0 +1,12 @@
+{
+  "mm9shoots": {
+    "category": "player",
+    "subtitle": "subtitles.mm9shoots",
+    "sounds": [
+      {
+        "name": "zombie_apocalypse:p226-9mm-close-single-gunshot-c-www.fesliyanstudios.com",
+        "stream": false
+      }
+    ]
+  }
+}

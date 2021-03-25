@@ -1,0 +1,31 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    {
+      "item": "zombie_apocalypse:fragmentitedust"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:fragmentiteitem",
+    "count": 1
+  }
+}

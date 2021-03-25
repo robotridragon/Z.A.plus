@@ -1,0 +1,22 @@
+{
+  "_fv": 17,
+  "_type": "potion",
+  "definition": {
+    "name": "Cancer",
+    "effectName": "Cancer",
+    "icon": "fragmentiteitem.png",
+    "color": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "onActiveTick": {
+      "name": "CancerOnPotionActiveTick"
+    }
+  }
+}

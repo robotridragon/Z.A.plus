@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/craftingtableside",
+    "up": "zombie_apocalypse:blocks/craftingtableside",
+    "north": "zombie_apocalypse:blocks/side1",
+    "east": "zombie_apocalypse:blocks/side1",
+    "south": "zombie_apocalypse:blocks/side1",
+    "west": "zombie_apocalypse:blocks/side1",
+    "particle": "zombie_apocalypse:blocks/craftingtableside"
+  }
+}

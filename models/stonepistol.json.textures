@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "stone_pistol"
+      },
+      "name": "default"
+    },
+    "ironpistol": {
+      "map": {
+        "0": "9mm_pistol"
+      },
+      "name": "ironpistol"
+    }
+  }
+}

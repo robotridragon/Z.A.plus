@@ -1,0 +1,20 @@
+{
+  "_fv": 17,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Mm9"
+      },
+      {
+        "value": "CUSTOM:Ammobag"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "ammo",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,1659 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Undead1NaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_1_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Undead1",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_1"
+    },
+    {
+      "name": "Undead1group",
+      "type": "mob",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_1group"
+    },
+    {
+      "name": "Undead2",
+      "type": "mob",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_2"
+    },
+    {
+      "name": "Undead2group",
+      "type": "mob",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_2group"
+    },
+    {
+      "name": "Drops",
+      "type": "loottable",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drops"
+    },
+    {
+      "name": "Undead3",
+      "type": "mob",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_3"
+    },
+    {
+      "name": "Undead2day",
+      "type": "mob",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_2day"
+    },
+    {
+      "name": "Undead1day",
+      "type": "mob",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_1day"
+    },
+    {
+      "name": "Pistol",
+      "type": "gun",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pistol"
+    },
+    {
+      "name": "Blood",
+      "type": "particle",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blood"
+    },
+    {
+      "name": "Corpse",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "corpse"
+    },
+    {
+      "name": "Undeaddeath",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undeaddeath",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hitevent",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hitevent",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stonebullet",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stonebullet"
+    },
+    {
+      "name": "Stonepistol",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stonepistol"
+    },
+    {
+      "name": "Stonebulletrecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stonebulletrecipe"
+    },
+    {
+      "name": "PistolRangedItemUsed",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pistol_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Undead4day",
+      "type": "mob",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_4day"
+    },
+    {
+      "name": "PistolBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pistol_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stoneknife",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stoneknife"
+    },
+    {
+      "name": "Ironknife",
+      "type": "tool",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironknife"
+    },
+    {
+      "name": "Cobblerecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobblerecipe"
+    },
+    {
+      "name": "Cobble2",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobble_2"
+    },
+    {
+      "name": "Cobble3",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobble_3"
+    },
+    {
+      "name": "Cobble4",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cobble_4"
+    },
+    {
+      "name": "Halfstick",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "halfstick"
+    },
+    {
+      "name": "Halfstickrecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "halfstickrecipe"
+    },
+    {
+      "name": "Stonekniferecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stonekniferecipe"
+    },
+    {
+      "name": "Ironkniferecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironkniferecipe"
+    },
+    {
+      "name": "Firemansaxe",
+      "type": "tool",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "firemansaxe"
+    },
+    {
+      "name": "Handle",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "handle"
+    },
+    {
+      "name": "Handlerecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "handlerecipe"
+    },
+    {
+      "name": "ThedeadoneEntityDies",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thedeadone_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ThedeadoneEntityIsHurt",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thedeadone_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thedeadone",
+      "type": "mob",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thedeadone"
+    },
+    {
+      "name": "Loot",
+      "type": "loottable",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "loot"
+    },
+    {
+      "name": "Blackhut",
+      "type": "structure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackhut"
+    },
+    {
+      "name": "WoodenSpear",
+      "type": "gun",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_spear"
+    },
+    {
+      "name": "SpearentityRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spearentity_right_clicked_on_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spearentity",
+      "type": "mob",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spearentity"
+    },
+    {
+      "name": "WoodenSpearBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_spear_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PoleItemInHandTick",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pole_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pole",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pole"
+    },
+    {
+      "name": "Polercipe",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polercipe"
+    },
+    {
+      "name": "WSpearrecipe",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "w_spearrecipe"
+    },
+    {
+      "name": "ThedeadoneOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thedeadone_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ironpistol",
+      "type": "gun",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpistol"
+    },
+    {
+      "name": "Firestation",
+      "type": "structure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "firestation"
+    },
+    {
+      "name": "Mm9recipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mm_9recipe"
+    },
+    {
+      "name": "Mm9",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mm_9"
+    },
+    {
+      "name": "Undead5",
+      "type": "mob",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "undead_5"
+    },
+    {
+      "name": "Fragmentiteitem",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentiteitem"
+    },
+    {
+      "name": "Fragmentite",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite"
+    },
+    {
+      "name": "Fragmentiteparticle",
+      "type": "particle",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentiteparticle"
+    },
+    {
+      "name": "Fragmentitefunction",
+      "type": "function",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentitefunction"
+    },
+    {
+      "name": "Fragmentite_tierPickaxe",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_pickaxe"
+    },
+    {
+      "name": "Fragmentite_tierAxe",
+      "type": "tool",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_axe"
+    },
+    {
+      "name": "Fragmentite_tierSword",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_sword"
+    },
+    {
+      "name": "Fragmentite_tierShovel",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_shovel"
+    },
+    {
+      "name": "Fragmentite_tierHoe",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_hoe"
+    },
+    {
+      "name": "Fragmentite_tierPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_pickaxe_recipe"
+    },
+    {
+      "name": "Fragmentite_tierAxeRecipe",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_axe_recipe"
+    },
+    {
+      "name": "Fragmentite_tierSwordRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_sword_recipe"
+    },
+    {
+      "name": "Fragmentite_tierShovelRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_shovel_recipe"
+    },
+    {
+      "name": "Fragmentite_tierHoeRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentite_tier_hoe_recipe"
+    },
+    {
+      "name": "Fragmentitehunk",
+      "type": "item",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentitehunk"
+    },
+    {
+      "name": "Brittleyetstorng",
+      "type": "achievement",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brittleyetstorng"
+    },
+    {
+      "name": "Fragmentitehunkrecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentitehunkrecipe"
+    },
+    {
+      "name": "Fragbits",
+      "type": "recipe",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragbits"
+    },
+    {
+      "name": "Hasadvancementbrittleyetstrong",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hasadvancementbrittleyetstrong",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fragmentitedust",
+      "type": "item",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentitedust"
+    },
+    {
+      "name": "Whenblockbreaksbyfragmentitetieritem",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "whenblockbreaksbyfragmentitetieritem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Greymetoroid",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greymetoroid"
+    },
+    {
+      "name": "Hotblock",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hotblock",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hotgreymetoroid",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hotgreymetoroid"
+    },
+    {
+      "name": "Fragbitscraft",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragbitscraft"
+    },
+    {
+      "name": "Greymetor",
+      "type": "structure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greymetor"
+    },
+    {
+      "name": "Volatileite",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite"
+    },
+    {
+      "name": "VolatileiteOre",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite_ore"
+    },
+    {
+      "name": "VolatileiteBlock",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite_block"
+    },
+    {
+      "name": "VolatileiteOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite_ore_block_recipe"
+    },
+    {
+      "name": "VolatileiteBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite_block_ore_recipe"
+    },
+    {
+      "name": "VolatileiteOreSmelting",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite_ore_smelting"
+    },
+    {
+      "name": "VolatileiteItemIsDroppedByPlayer",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileite_item_is_dropped_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Purevolatileitedroped",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purevolatileitedroped",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Purevolatileite",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purevolatileite"
+    },
+    {
+      "name": "YIKES",
+      "type": "achievement",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "yikes"
+    },
+    {
+      "name": "Purevolatileitecraft",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purevolatileitecraft"
+    },
+    {
+      "name": "Iron1",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_1"
+    },
+    {
+      "name": "Bedrockbreaking",
+      "type": "enchantment",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bedrockbreaking"
+    },
+    {
+      "name": "GreatdrillRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greatdrill_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Greatdrill",
+      "type": "item",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "greatdrill"
+    },
+    {
+      "name": "CancerOnPotionActiveTick",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cancer_on_potion_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cancer",
+      "type": "potion",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cancer"
+    },
+    {
+      "name": "Blackmeteor",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackmeteor"
+    },
+    {
+      "name": "Blackmeteorspawn",
+      "type": "structure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blackmeteorspawn"
+    },
+    {
+      "name": "Volatileiteoreloot",
+      "type": "loottable",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileiteoreloot"
+    },
+    {
+      "name": "ArrowItems",
+      "type": "tag",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arrow_items"
+    },
+    {
+      "name": "FragmentitearrowLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentitearrow_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fragmentitearrow",
+      "type": "item",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fragmentitearrow"
+    },
+    {
+      "name": "Volatileitearrow",
+      "type": "item",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "volatileitearrow"
+    },
+    {
+      "name": "Boomarrow",
+      "type": "gun",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boomarrow"
+    },
+    {
+      "name": "Admingui",
+      "type": "gui",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "admingui"
+    },
+    {
+      "name": "Hitadminbutton",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hitadminbutton",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdminguiThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "admingui_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Netherplaceloot",
+      "type": "loottable",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherplaceloot"
+    },
+    {
+      "name": "BoomarrowBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "boomarrow_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Turretnormal",
+      "type": "mob",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turretnormal"
+    },
+    {
+      "name": "TurretnormalOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turretnormal_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ammobag",
+      "type": "item",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammobag"
+    },
+    {
+      "name": "Ammo",
+      "type": "tag",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammo"
+    },
+    {
+      "name": "IronpistolCanUseRangedItem",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ironpistol_can_use_ranged_item",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ammobagrecipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ammobagrecipe"
+    },
+    {
+      "name": "Turretstand",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turretstand"
+    },
+    {
+      "name": "Gunbox",
+      "type": "item",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gunbox"
+    },
+    {
+      "name": "Gunbarrel",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gunbarrel"
+    },
+    {
+      "name": "Gunboxrecipe",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gunboxrecipe"
+    },
+    {
+      "name": "Gunbarrelrecipe",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gunbarrelrecipe"
+    },
+    {
+      "name": "Turrethead",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "turrethead"
+    },
+    {
+      "name": "BuildturretOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "buildturret_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Buildturret",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "buildturret"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "title",
+      "type": "string",
+      "scope": "global",
+      "value": ""
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "mm9shoots",
+      "files": [
+        "p226-9mm-close-single-gunshot-c-www.fesliyanstudios.com"
+      ],
+      "category": "player",
+      "subtitle": "9mm shoots"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "entity.zombie_apocalypse.undead_4day": "DMG soaker zombie daytime",
+      "advancements.yikes.descr": "get pure volatileite and drop it",
+      "item.zombie_apocalypse.mm_9": "9mm round",
+      "entity.zombie_apocalypse.thedeadone": "The dead one",
+      "block.zombie_apocalypse.volatileite_block": "Block of Volatileite",
+      "item.zombie_apocalypse.wooden_spear": "Wooden Spear",
+      "item.zombie_apocalypse.undead_4day_spawn_egg": "DMG soaker zombie daytime Spawn Egg",
+      "item.zombie_apocalypse.stonebullet": "Rock",
+      "item.zombie_apocalypse.pistol": "stone Pistol",
+      "item.zombie_apocalypse.stoneknife": "Stone knife",
+      "item.zombie_apocalypse.volatileite": "Unpure Volatileite ",
+      "effect.cancer": "Cancer",
+      "item.zombie_apocalypse.turretnormal_spawn_egg": "Turret ( normal ) Spawn Egg",
+      "enchantment.zombie_apocalypse.bedrockbreaking": "Bedrock breaking",
+      "item.zombie_apocalypse.undead_1_spawn_egg": "average zombie Spawn Egg",
+      "entity.zombie_apocalypse.undead_1day": "average zombie daytime",
+      "block.zombie_apocalypse.blackmeteor": "Black meteorite",
+      "block.zombie_apocalypse.greymetoroid": "Grey metoroid",
+      "item.zombie_apocalypse.fragmentite_tier_axe": "Fragmentite Axe",
+      "item.minecraft.potion.effect.cancer": "Cancer",
+      "item.zombie_apocalypse.gunbarrel": "Gun barrel",
+      "item.minecraft.splash_potion.effect.cancer": "Splash Cancer",
+      "item.zombie_apocalypse.pole": "Pole",
+      "block.zombie_apocalypse.fragmentite": "Fragmen-tite ore",
+      "item.zombie_apocalypse.fragmentite_tier_pickaxe": "Fragmentite Pickaxe",
+      "item.zombie_apocalypse.greatdrill": "Great drill",
+      "subtitles.mm9shoots": "9mm shoots",
+      "item.zombie_apocalypse.fragmentitedust": "Fragmentite dust",
+      "item.zombie_apocalypse.undead_5_spawn_egg": "climbing zombie Spawn Egg",
+      "block.zombie_apocalypse.corpse": "Corpse",
+      "advancements.yikes.title": "YIKES!",
+      "entity.zombie_apocalypse.undead_2day": "fast zombie daytime",
+      "entity.zombie_apocalypse.undead_1group": "entity:name:hoard1:",
+      "item.zombie_apocalypse.undead_2_spawn_egg": "fast zombie Spawn Egg",
+      "item.zombie_apocalypse.halfstick": "Half stick",
+      "item.zombie_apocalypse.handle": "Handle",
+      "block.zombie_apocalypse.hotgreymetoroid": "Hotgreymetoroid",
+      "entity.zombie_apocalypse.turretnormal": "Turret ( normal )",
+      "entity.zombie_apocalypse.undead_2group": "entity:name:hoard2:",
+      "advancements.brittleyetstorng.title": "Brittle yet strong????",
+      "item.zombie_apocalypse.ammobag": "Ammo bag",
+      "item.minecraft.lingering_potion.effect.cancer": "Lingering Cancer",
+      "item.zombie_apocalypse.gunbox": "Gun box",
+      "entity.zombie_apocalypse.undead_1": "average zombie",
+      "entity.zombie_apocalypse.undead_2": "fast zombie",
+      "entity.zombie_apocalypse.undead_3": "bruiser zombie",
+      "item.zombie_apocalypse.boomarrow": "Boom arrow",
+      "item.zombie_apocalypse.turretstand": "Turret stand",
+      "entity.zombie_apocalypse.undead_5": "climbing zombie",
+      "item.zombie_apocalypse.fragmentiteitem": "Fragmentite",
+      "item.zombie_apocalypse.undead_3_spawn_egg": "bruiser zombie Spawn Egg",
+      "item.minecraft.tipped_arrow.effect.cancer": "Arrow of Cancer",
+      "item.zombie_apocalypse.purevolatileite": "Pure volatileite",
+      "item.zombie_apocalypse.turrethead": "Turret head",
+      "item.zombie_apocalypse.fragmentitearrow": "Fragmentite arrow",
+      "item.zombie_apocalypse.spearentity_spawn_egg": "entity_name:_Spear_entity Spawn Egg",
+      "item.zombie_apocalypse.undead_1group_spawn_egg": "entity:name:hoard1: Spawn Egg",
+      "item.zombie_apocalypse.ironpistol": "9mm Pistol",
+      "entity.zombie_apocalypse.spearentity": "entity_name:_Spear_entity",
+      "item.zombie_apocalypse.fragmentite_tier_sword": "Fragmentite Sword",
+      "item.zombie_apocalypse.fragmentitehunk": "Fragmentite hunk",
+      "advancements.brittleyetstorng.descr": "i get you do not understand!",
+      "block.zombie_apocalypse.volatileite_ore": "Volatileite Ore",
+      "item.zombie_apocalypse.fragmentite_tier_hoe": "Fragmentite Hoe",
+      "item.zombie_apocalypse.thedeadone_spawn_egg": "The dead one Spawn Egg",
+      "item.zombie_apocalypse.undead_2group_spawn_egg": "entity:name:hoard2: Spawn Egg",
+      "item.zombie_apocalypse.undead_1day_spawn_egg": "average zombie daytime Spawn Egg",
+      "item.zombie_apocalypse.undead_2day_spawn_egg": "fast zombie daytime Spawn Egg",
+      "item.zombie_apocalypse.firemansaxe": "Firemens axe",
+      "item.zombie_apocalypse.volatileitearrow": "Fragmentite arrow",
+      "item.zombie_apocalypse.fragmentite_tier_shovel": "Fragmentite Shovel",
+      "item.zombie_apocalypse.ironknife": "Iron knife",
+      "block.zombie_apocalypse.buildturret": "Build-turret"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "zombie_apocalypse",
+    "modName": "zombie apocalypse +",
+    "version": "pre alpha",
+    "description": "more zombies! and items!",
+    "author": "robotridragon",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.zombieapocalypse",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100112313
+}

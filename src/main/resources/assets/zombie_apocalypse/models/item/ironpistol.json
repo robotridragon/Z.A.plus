@@ -1,0 +1,7 @@
+{
+  "parent": "zombie_apocalypse:custom/stonepistol",
+  "textures": {
+    "0": "zombie_apocalypse:blocks/9mm_pistol",
+    "particle": "zombie_apocalypse:items/9mmpistol"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "group": "things_and_stuff",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "zombie_apocalypse:halfstick"
+    },
+    "4": {
+      "item": "zombie_apocalypse:handle"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:pole",
+    "count": 1
+  }
+}

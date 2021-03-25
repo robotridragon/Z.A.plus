@@ -1,0 +1,8 @@
+{
+  "parent": "zombie_apocalypse:custom/corpse",
+  "textures": {
+    "all": "zombie_apocalypse:blocks/zombie-java-planetminecraft-com-14030879",
+    "particle": "zombie_apocalypse:blocks/zombie-java-planetminecraft-com-14030879",
+    "0": "zombie_apocalypse:blocks/zombie-java-planetminecraft-com-14030879"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "zombie_apocalypse:volatileite"
+    },
+    "1": {
+      "item": "zombie_apocalypse:volatileite"
+    },
+    "2": {
+      "item": "zombie_apocalypse:volatileite"
+    },
+    "3": {
+      "item": "zombie_apocalypse:volatileite"
+    },
+    "4": {
+      "item": "zombie_apocalypse:fragmentitedust"
+    },
+    "5": {
+      "item": "zombie_apocalypse:purevolatileite"
+    },
+    "6": {
+      "item": "zombie_apocalypse:purevolatileite"
+    },
+    "7": {
+      "item": "zombie_apocalypse:purevolatileite"
+    },
+    "8": {
+      "item": "zombie_apocalypse:purevolatileite"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:volatileite_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "group": "things_and_stuff",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:string"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:handle",
+    "count": 1
+  }
+}

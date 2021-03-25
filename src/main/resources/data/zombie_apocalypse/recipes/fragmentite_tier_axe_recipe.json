@@ -1,0 +1,30 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "zombie_apocalypse:fragmentitehunk"
+    },
+    "1": {
+      "item": "zombie_apocalypse:fragmentitehunk"
+    },
+    "2": {
+      "item": "zombie_apocalypse:fragmentitehunk"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:fragmentite_tier_axe",
+    "count": 1
+  }
+}

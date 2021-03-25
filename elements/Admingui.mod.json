@@ -1,0 +1,64 @@
+{
+  "_fv": 17,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 1,
+    "inventoryOffsetY": 1,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "title text HERE",
+          "width": 120,
+          "height": 20,
+          "name": "title",
+          "x": 156,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "firemanaxe.png",
+          "use1Xscale": false,
+          "name": "firemanaxe.png",
+          "x": 135,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "enter",
+          "width": 50,
+          "height": 20,
+          "name": "enter",
+          "x": 190,
+          "y": 90
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 203,
+          "y": 40
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "AdminguiThisGUIIsClosed"
+    }
+  }
+}
