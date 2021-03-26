@@ -1,0 +1,7 @@
+{
+  "parent": "zombie_apocalypse:custom/oneusejetpack",
+  "textures": {
+    "0": "zombie_apocalypse:blocks/jetpack",
+    "particle": "zombie_apocalypse:items/jetpack"
+  }
+}

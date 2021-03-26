@@ -1,0 +1,36 @@
+{
+  "_fv": 17,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "jetpack",
+    "customModelName": "oneusejetpack:default",
+    "name": "Booster",
+    "rarity": "UNCOMMON",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": -23,
+    "toolType": 1.0,
+    "damageCount": 10,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "Turretgui",
+    "inventorySize": 3,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "BoosterRightClickedInAir"
+    }
+  }
+}

@@ -8,5 +8,15 @@
         "stream": false
       }
     ]
+  },
+  "virushuskhit": {
+    "category": "hostile",
+    "subtitle": "subtitles.virushuskhit",
+    "sounds": [
+      {
+        "name": "zombie_apocalypse:zapsplat_impacts_object_heavy_thud_dirt_stones_debris_flying_001_43704",
+        "stream": false
+      }
+    ]
   }
 }

@@ -2,22 +2,22 @@
   "_fv": 17,
   "_type": "mob",
   "definition": {
-    "mobName": "fast zombie daytime",
+    "mobName": "Infector",
     "mobLabel": "",
     "mobModelName": "Modelzombie",
-    "mobModelTexture": "zombiefast.png",
-    "mobModelGlowTexture": "glow1.png",
+    "mobModelTexture": "glow4.png",
+    "mobModelGlowTexture": "glow4.png",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16485829,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16767795,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -44,16 +44,16 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
-    "mobCreatureType": "UNDEAD",
-    "attackStrength": 4,
-    "attackKnockback": 0.1,
-    "knockbackResistance": 0.5,
-    "movementSpeed": 0.35,
-    "armorBaseValue": 0.9,
+    "mobBehaviourType": "Mob",
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.0,
+    "movementSpeed": 0.3,
+    "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 40,
-    "xpAmount": 5,
+    "health": 10,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -77,33 +77,30 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "Items.ROTTEN_FLESH"
+      "value": ""
     },
     "livingSound": {
-      "value": "entity.husk.ambient"
+      "value": ""
     },
     "hurtSound": {
-      "value": "entity.zombie.hurt"
+      "value": "CUSTOM:virushuskhit"
     },
     "deathSound": {
-      "value": "entity.zombie_villager.death"
+      "value": "block.fungus.break"
     },
     "stepSound": {
-      "value": "block.nether_bricks.step"
+      "value": ""
     },
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "TOTEM"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "whenMobDies": {
-      "name": "Undeaddeath"
-    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityLiving</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
@@ -114,11 +111,11 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 250,
-    "mobSpawningType": "creature",
-    "minNumberOfMobsPerGroup": 5,
-    "maxNumberOfMobsPerGroup": 8,
+    "spawningProbability": 20,
+    "mobSpawningType": "monster",
+    "minNumberOfMobsPerGroup": 4,
+    "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
-    "spawnInDungeons": true
+    "spawnInDungeons": false
   }
 }

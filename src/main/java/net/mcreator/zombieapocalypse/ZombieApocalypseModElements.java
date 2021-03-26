@@ -48,6 +48,8 @@ public class ZombieApocalypseModElements {
 	public ZombieApocalypseModElements() {
 		sounds.put(new ResourceLocation("zombie_apocalypse", "mm9shoots"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("zombie_apocalypse", "mm9shoots")));
+		sounds.put(new ResourceLocation("zombie_apocalypse", "virushuskhit"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("zombie_apocalypse", "virushuskhit")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("zombie_apocalypse").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
