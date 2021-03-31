@@ -466,7 +466,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blackhut"
+      "registry_name": "blackhut",
+      "path": "~/structures"
     },
     {
       "name": "WoodenSpear",
@@ -645,7 +646,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "firestation"
+      "registry_name": "firestation",
+      "path": "~/structures"
     },
     {
       "name": "Mm9recipe",
@@ -958,7 +960,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "greymetor"
+      "registry_name": "greymetor",
+      "path": "~/structures"
     },
     {
       "name": "Volatileite",
@@ -1209,7 +1212,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blackmeteorspawn"
+      "registry_name": "blackmeteorspawn",
+      "path": "~/structures"
     },
     {
       "name": "Volatileiteoreloot",
@@ -1718,7 +1722,7 @@
       "effect.cancer": "Cancer",
       "item.zombie_apocalypse.turretnormal_spawn_egg": "Turret ( normal ) Spawn Egg",
       "enchantment.zombie_apocalypse.bedrockbreaking": "Bedrock breaking",
-      "item.zombie_apocalypse.undead_1_spawn_egg": "average zombie Spawn Egg",
+      "item.zombie_apocalypse.undead_1_spawn_egg": "average zombie test subject Spawn Egg",
       "entity.zombie_apocalypse.undead_1day": "average zombie daytime",
       "block.zombie_apocalypse.blackmeteor": "Black meteorite",
       "block.zombie_apocalypse.greymetoroid": "Grey metoroid",
@@ -1751,7 +1755,7 @@
       "item.minecraft.lingering_potion.effect.cancer": "Lingering Cancer",
       "item.zombie_apocalypse.gunbox": "Gun box",
       "item.minecraft.potion.effect.infected": "Infected",
-      "entity.zombie_apocalypse.undead_1": "average zombie",
+      "entity.zombie_apocalypse.undead_1": "average zombie test subject",
       "entity.zombie_apocalypse.undead_2": "fast zombie",
       "item.minecraft.tipped_arrow.effect.infected": "Arrow of Infected",
       "entity.zombie_apocalypse.undead_3": "bruiser zombie",
@@ -1789,7 +1793,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "structures",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "zombie_apocalypse",

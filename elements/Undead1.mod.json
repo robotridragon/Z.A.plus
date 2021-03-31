@@ -2,7 +2,7 @@
   "_fv": 17,
   "_type": "mob",
   "definition": {
-    "mobName": "average zombie",
+    "mobName": "average zombie test subject",
     "mobLabel": "",
     "mobModelName": "Modelzombie",
     "mobModelTexture": "undead3tex.png",
