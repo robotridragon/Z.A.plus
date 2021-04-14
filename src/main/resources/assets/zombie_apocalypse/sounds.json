@@ -18,5 +18,15 @@
         "stream": false
       }
     ]
+  },
+  "ak47shoot": {
+    "category": "player",
+    "subtitle": "subtitles.ak47shoot",
+    "sounds": [
+      {
+        "name": "zombie_apocalypse:ak47gunsound",
+        "stream": false
+      }
+    ]
   }
 }

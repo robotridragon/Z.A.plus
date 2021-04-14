@@ -1,9 +1,15 @@
 package net.mcreator.zombieapocalypse.procedures;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.MobEntity;
+import net.minecraft.entity.ILivingEntityData;
+import net.minecraft.entity.Entity;
 
-import net.mcreator.zombieapocalypse.block.CorpseBlock;
+import net.mcreator.zombieapocalypse.entity.CorpseentityEntity;
 import net.mcreator.zombieapocalypse.ZombieApocalypseModElements;
 import net.mcreator.zombieapocalypse.ZombieApocalypseMod;
 
@@ -16,6 +22,11 @@ public class UndeaddeathProcedure extends ZombieApocalypseModElements.ModElement
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				ZombieApocalypseMod.LOGGER.warn("Failed to load dependency entity for procedure Undeaddeath!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				ZombieApocalypseMod.LOGGER.warn("Failed to load dependency x for procedure Undeaddeath!");
@@ -36,10 +47,20 @@ public class UndeaddeathProcedure extends ZombieApocalypseModElements.ModElement
 				ZombieApocalypseMod.LOGGER.warn("Failed to load dependency world for procedure Undeaddeath!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), CorpseBlock.block.getDefaultState(), 3);
+		if (world instanceof ServerWorld) {
+			Entity entityToSpawn = new CorpseentityEntity.CustomEntity(CorpseentityEntity.entity, (World) world);
+			entityToSpawn.setLocationAndAngles(x, y, z, (float) (entity.rotationYaw), (float) (entity.rotationPitch));
+			entityToSpawn.setRenderYawOffset((float) (entity.rotationYaw));
+			entityToSpawn.setMotion((entity.getMotion().getX()), (entity.getMotion().getY()), (entity.getMotion().getZ()));
+			if (entityToSpawn instanceof MobEntity)
+				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
+						SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
+			world.addEntity(entityToSpawn);
+		}
 	}
 }

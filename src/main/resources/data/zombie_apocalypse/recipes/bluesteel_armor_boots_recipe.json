@@ -1,0 +1,26 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    },
+    "2": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    },
+    "3": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    },
+    "5": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:bluesteel_armor_boots",
+    "count": 1
+  }
+}

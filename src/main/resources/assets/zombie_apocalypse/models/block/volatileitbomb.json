@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/jetpack",
+    "up": "zombie_apocalypse:blocks/jetpack",
+    "north": "zombie_apocalypse:blocks/jetpack",
+    "east": "zombie_apocalypse:blocks/jetpack",
+    "south": "zombie_apocalypse:blocks/jetpack",
+    "west": "zombie_apocalypse:blocks/jetpack",
+    "particle": "zombie_apocalypse:blocks/jetpack"
+  }
+}

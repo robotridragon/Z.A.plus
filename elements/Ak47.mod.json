@@ -1,0 +1,40 @@
+{
+  "_fv": 17,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "ak47",
+    "customModelName": "Normal",
+    "name": "Ak-47",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Ak47ammo"
+    },
+    "shootConstantly": false,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "CUSTOM:ak47shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "Ak47RangedItemUsed"
+    },
+    "bulletPower": 5.0,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.AIR"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

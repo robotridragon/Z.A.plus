@@ -1,0 +1,44 @@
+{
+  "_fv": 17,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Undead1"
+      },
+      {
+        "value": "CUSTOM:Undead1group"
+      },
+      {
+        "value": "CUSTOM:Undead2"
+      },
+      {
+        "value": "CUSTOM:Undead2group"
+      },
+      {
+        "value": "CUSTOM:Undead3"
+      },
+      {
+        "value": "CUSTOM:Undead2day"
+      },
+      {
+        "value": "CUSTOM:Undead1day"
+      },
+      {
+        "value": "CUSTOM:Undead4day"
+      },
+      {
+        "value": "CUSTOM:Undead5"
+      },
+      {
+        "value": "CUSTOM:Infector"
+      }
+    ],
+    "name": "undeadtag",
+    "namespace": "forge"
+  }
+}

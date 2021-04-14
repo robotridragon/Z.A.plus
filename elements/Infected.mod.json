@@ -17,6 +17,9 @@
     "renderStatusInHUD": true,
     "onActiveTick": {
       "name": "InfectedOnPotionActiveTick"
+    },
+    "onExpired": {
+      "name": "InfectedPotionExpires"
     }
   }
 }

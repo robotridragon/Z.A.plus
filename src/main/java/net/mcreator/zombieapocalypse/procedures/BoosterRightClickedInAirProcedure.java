@@ -1,9 +1,6 @@
 package net.mcreator.zombieapocalypse.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
@@ -77,31 +74,5 @@ public class BoosterRightClickedInAirProcedure extends ZombieApocalypseModElemen
 		if (entity instanceof PlayerEntity) {
 			((PlayerEntity) entity).startFallFlying();
 		}
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private IWorld world;
-			public void start(IWorld world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				if (entity instanceof PlayerEntity) {
-					((PlayerEntity) entity).stopFallFlying();
-				}
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, (int) 800);
 	}
 }

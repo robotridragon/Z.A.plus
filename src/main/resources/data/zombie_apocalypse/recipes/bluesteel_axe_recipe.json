@@ -1,0 +1,30 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    },
+    "1": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    },
+    "2": {
+      "item": "zombie_apocalypse:bluesteelingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:bluesteel_axe",
+    "count": 1
+  }
+}

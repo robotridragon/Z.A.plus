@@ -1,0 +1,20 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 3.0,
+    "cookingTime": 260,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Bluesteelore"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Bluesteelingot"
+    },
+    "name": "bluesteelrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "zombie_apocalypse:blocks/bluesteelblock",
+    "top": "zombie_apocalypse:blocks/door"
+  }
+}

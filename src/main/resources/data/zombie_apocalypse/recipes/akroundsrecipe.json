@@ -1,0 +1,19 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:ak_47rounds",
+    "count": 10
+  }
+}

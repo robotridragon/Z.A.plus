@@ -1,0 +1,12 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:smelting",
+  "experience": 3,
+  "cookingtime": 260,
+  "ingredient": {
+    "item": "zombie_apocalypse:bluesteelore"
+  },
+  "result": {
+    "item": "zombie_apocalypse:bluesteelingot"
+  }
+}

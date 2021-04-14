@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/darkstone",
+    "up": "zombie_apocalypse:blocks/darkstone",
+    "north": "zombie_apocalypse:blocks/darkstone",
+    "east": "zombie_apocalypse:blocks/darkstone",
+    "south": "zombie_apocalypse:blocks/darkstone",
+    "west": "zombie_apocalypse:blocks/darkstone",
+    "particle": "zombie_apocalypse:blocks/darkstone"
+  }
+}

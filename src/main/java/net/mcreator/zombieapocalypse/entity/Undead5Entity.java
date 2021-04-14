@@ -30,6 +30,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.SpiderEntity;
 import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -61,6 +62,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.zombieapocalypse.procedures.UndeaddeathProcedure;
+import net.mcreator.zombieapocalypse.procedures.Undead5OnEntityTickUpdateProcedure;
 import net.mcreator.zombieapocalypse.procedures.Undead1NaturalEntitySpawningConditionProcedure;
 import net.mcreator.zombieapocalypse.ZombieApocalypseModElements;
 
@@ -84,8 +86,8 @@ public class Undead5Entity extends ZombieApocalypseModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
-						.build("undead_5").setRegistryName("undead_5");
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("undead_5")
+						.setRegistryName("undead_5");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -16692442, -16508551, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("undead_5_spawn_egg"));
@@ -157,14 +159,16 @@ public class Undead5Entity extends ZombieApocalypseModElements.ModElement {
 			this.goalSelector.addGoal(1, new BreakBlockGoal(Blocks.COBBLESTONE.getDefaultState().getBlock(), this, 70, (int) 5));
 			this.goalSelector.addGoal(2, new BreakBlockGoal(Blocks.OAK_LOG.getDefaultState().getBlock(), this, 80, (int) 5));
 			this.goalSelector.addGoal(3, new BreakBlockGoal(Blocks.OAK_PLANKS.getDefaultState().getBlock(), this, 100, (int) 5));
-			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, VillagerEntity.class, true, true));
-			this.goalSelector.addGoal(6, new MeleeAttackGoal(this, 1.2, true));
-			this.goalSelector.addGoal(7, new RandomWalkingGoal(this, 0.5));
-			this.targetSelector.addGoal(8, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(9, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(10, new BreakDoorGoal(this, e -> true));
-			this.goalSelector.addGoal(11, new SwimGoal(this));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, true));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, SurvivorEntity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, VillagerEntity.class, true, true));
+			this.goalSelector.addGoal(8, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(9, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(10, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(11, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(12, new BreakDoorGoal(this, e -> true));
+			this.goalSelector.addGoal(13, new SwimGoal(this));
 		}
 
 		@Override
@@ -208,11 +212,26 @@ public class Undead5Entity extends ZombieApocalypseModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				UndeaddeathProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				Undead5OnEntityTickUpdateProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

@@ -2,7 +2,6 @@ package net.mcreator.zombieapocalypse.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.DamageSource;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
@@ -65,7 +64,6 @@ public class InfectedOnPotionActiveTickProcedure extends ZombieApocalypseModElem
 					}.compareDistOf(x, y, z)).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if ((entityiterator instanceof LivingEntity)) {
-					entityiterator.attackEntityFrom(DamageSource.GENERIC, (float) 1);
 					if (entity instanceof LivingEntity)
 						((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 60, (int) 1, (false), (false)));
 					if (entity instanceof LivingEntity)

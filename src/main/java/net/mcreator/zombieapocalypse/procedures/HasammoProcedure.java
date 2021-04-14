@@ -28,11 +28,17 @@ public class HasammoProcedure extends ZombieApocalypseModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			if (!dependencies.containsKey("entity"))
+				ZombieApocalypseMod.LOGGER.warn("Failed to load dependency entity for procedure Hasammo!");
+			return;
+		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
 				ZombieApocalypseMod.LOGGER.warn("Failed to load dependency sourceentity for procedure Hasammo!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if ((sourceentity instanceof TurretnormalEntity.CustomEntity)) {
 			if ((!(((new Object() {
@@ -43,7 +49,7 @@ public class HasammoProcedure extends ZombieApocalypseModElements.ModElement {
 					});
 					return _retval.get();
 				}
-			}.getItemStack((int) (0), sourceentity)).getItem() == new ItemStack(Mm9Item.block, (int) (1)).getItem()) && ((new Object() {
+			}.getItemStack((int) (0), entity)).getItem() == new ItemStack(Mm9Item.block, (int) (1)).getItem()) && ((new Object() {
 				public ItemStack getItemStack(int sltid, Entity entity) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
@@ -51,7 +57,7 @@ public class HasammoProcedure extends ZombieApocalypseModElements.ModElement {
 					});
 					return _retval.get();
 				}
-			}.getItemStack((int) (1), sourceentity)).getItem() == new ItemStack(AmmobagItem.block, (int) (1)).getItem())))) {
+			}.getItemStack((int) (1), entity)).getItem() == new ItemStack(AmmobagItem.block, (int) (1)).getItem())))) {
 				if (dependencies.get("event") != null) {
 					Object _obj = dependencies.get("event");
 					if (_obj instanceof Event) {

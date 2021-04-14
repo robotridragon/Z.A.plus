@@ -13,7 +13,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -22,12 +21,11 @@ import net.mcreator.zombieapocalypse.ZombieApocalypseMod;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
-public class AdminguiGuiWindow extends ContainerScreen<AdminguiGui.GuiContainerMod> {
+public class MinifactorybombGuiWindow extends ContainerScreen<MinifactorybombGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	TextFieldWidget title;
-	public AdminguiGuiWindow(AdminguiGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
+	public MinifactorybombGuiWindow(MinifactorybombGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -37,18 +35,12 @@ public class AdminguiGuiWindow extends ContainerScreen<AdminguiGui.GuiContainerM
 		this.xSize = 176;
 		this.ySize = 166;
 	}
-
-	@Override
-	public boolean isPauseScreen() {
-		return true;
-	}
-	private static final ResourceLocation texture = new ResourceLocation("zombie_apocalypse:textures/admingui.png");
+	private static final ResourceLocation texture = new ResourceLocation("zombie_apocalypse:textures/minifactorybomb.png");
 	@Override
 	public void render(MatrixStack ms, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderHoveredTooltip(ms, mouseX, mouseY);
-		title.render(ms, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
@@ -58,8 +50,6 @@ public class AdminguiGuiWindow extends ContainerScreen<AdminguiGui.GuiContainerM
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("zombie_apocalypse:textures/firemanaxe.png"));
-		this.blit(ms, this.guiLeft + 9, this.guiTop + 21, 0, 0, 16, 16, 16, 16);
 	}
 
 	@Override
@@ -68,15 +58,12 @@ public class AdminguiGuiWindow extends ContainerScreen<AdminguiGui.GuiContainerM
 			this.minecraft.player.closeScreen();
 			return true;
 		}
-		if (title.isFocused())
-			return title.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		title.tick();
 	}
 
 	@Override
@@ -93,34 +80,9 @@ public class AdminguiGuiWindow extends ContainerScreen<AdminguiGui.GuiContainerM
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		title = new TextFieldWidget(this.font, this.guiLeft + 30, this.guiTop + 20, 120, 20, new StringTextComponent("title text HERE")) {
-			{
-				setSuggestion("title text HERE");
-			}
-			@Override
-			public void writeText(String text) {
-				super.writeText(text);
-				if (getText().isEmpty())
-					setSuggestion("title text HERE");
-				else
-					setSuggestion(null);
-			}
-
-			@Override
-			public void setCursorPosition(int pos) {
-				super.setCursorPosition(pos);
-				if (getText().isEmpty())
-					setSuggestion("title text HERE");
-				else
-					setSuggestion(null);
-			}
-		};
-		AdminguiGui.guistate.put("text:title", title);
-		title.setMaxStringLength(32767);
-		this.children.add(this.title);
-		this.addButton(new Button(this.guiLeft + 64, this.guiTop + 53, 50, 20, new StringTextComponent("enter"), e -> {
-			ZombieApocalypseMod.PACKET_HANDLER.sendToServer(new AdminguiGui.ButtonPressedMessage(0, x, y, z));
-			AdminguiGui.handleButtonAction(entity, 0, x, y, z);
+		this.addButton(new Button(this.guiLeft + 60, this.guiTop + -20, 55, 20, new StringTextComponent("create"), e -> {
+			ZombieApocalypseMod.PACKET_HANDLER.sendToServer(new MinifactorybombGui.ButtonPressedMessage(0, x, y, z));
+			MinifactorybombGui.handleButtonAction(entity, 0, x, y, z);
 		}));
 	}
 }

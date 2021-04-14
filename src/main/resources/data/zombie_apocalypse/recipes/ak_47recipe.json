@@ -1,0 +1,27 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 4 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "zombie_apocalypse:gunbarrel"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "6": {
+      "item": "zombie_apocalypse:ak_47ammo"
+    },
+    "8": {
+      "item": "zombie_apocalypse:halfstick"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:ak_47",
+    "count": 1
+  }
+}

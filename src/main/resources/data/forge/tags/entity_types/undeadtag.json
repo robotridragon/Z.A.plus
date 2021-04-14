@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "zombie_apocalypse:undead_1",
+    "zombie_apocalypse:undead_1group",
+    "zombie_apocalypse:undead_2",
+    "zombie_apocalypse:undead_2group",
+    "zombie_apocalypse:undead_3",
+    "zombie_apocalypse:undead_2day",
+    "zombie_apocalypse:undead_1day",
+    "zombie_apocalypse:undead_4day",
+    "zombie_apocalypse:undead_5",
+    "zombie_apocalypse:infector"
+  ]
+}

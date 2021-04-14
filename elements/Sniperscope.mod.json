@@ -1,0 +1,15 @@
+{
+  "_fv": 17,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "F",
+    "keyBindingName": "Sniperscope",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SniperscopeOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "SniperscopeOnKeyReleased"
+    }
+  }
+}

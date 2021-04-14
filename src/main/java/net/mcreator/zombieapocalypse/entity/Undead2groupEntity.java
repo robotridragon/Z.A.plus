@@ -26,7 +26,9 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.merchant.villager.VillagerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
@@ -34,7 +36,6 @@ import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.BreakDoorGoal;
-import net.minecraft.entity.ai.goal.BreakBlockGoal;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -52,7 +53,6 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.IEntityRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.zombieapocalypse.procedures.UndeaddeathProcedure;
@@ -146,14 +146,16 @@ public class Undead2groupEntity extends ZombieApocalypseModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new BreakBlockGoal(Blocks.COBBLESTONE.getDefaultState().getBlock(), this, 70, (int) 5));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
-			this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, true));
-			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8));
-			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
-			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(7, new BreakDoorGoal(this, e -> true));
-			this.goalSelector.addGoal(8, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, AnimalEntity.class, true, true));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, SurvivorEntity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, VillagerEntity.class, true, true));
+			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, true));
+			this.goalSelector.addGoal(6, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(7, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
+			this.goalSelector.addGoal(8, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(9, new BreakDoorGoal(this, e -> true));
+			this.goalSelector.addGoal(10, new SwimGoal(this));
 		}
 
 		@Override
@@ -197,6 +199,7 @@ public class Undead2groupEntity extends ZombieApocalypseModElements.ModElement {
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

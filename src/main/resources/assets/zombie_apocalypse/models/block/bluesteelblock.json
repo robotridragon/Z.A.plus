@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "zombie_apocalypse:blocks/bluesteelblock",
+    "up": "zombie_apocalypse:blocks/bluesteelblock",
+    "north": "zombie_apocalypse:blocks/bluesteelblock",
+    "east": "zombie_apocalypse:blocks/bluesteelblock",
+    "south": "zombie_apocalypse:blocks/bluesteelblock",
+    "west": "zombie_apocalypse:blocks/bluesteelblock",
+    "particle": "zombie_apocalypse:blocks/bluesteelblock"
+  }
+}

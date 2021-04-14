@@ -1,0 +1,57 @@
+{
+  "_fv": 17,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 30,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 145,
+          "y": 93
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 144,
+          "y": 131
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "detonate",
+          "onClick": {
+            "name": "DetonateVbomb"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "detonate",
+          "x": 186,
+          "y": 110
+        }
+      }
+    ]
+  }
+}

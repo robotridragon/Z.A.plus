@@ -1,0 +1,16 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "zombie_apocalypse:ak_47rounds"
+    }
+  ],
+  "result": {
+    "item": "zombie_apocalypse:ak_47ammo",
+    "count": 4
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "zombie_apocalypse",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_nugget"
+    },
+    "1": {
+      "item": "minecraft:gunpowder"
+    }
+  },
+  "result": {
+    "item": "zombie_apocalypse:mm_9",
+    "count": 3
+  }
+}
